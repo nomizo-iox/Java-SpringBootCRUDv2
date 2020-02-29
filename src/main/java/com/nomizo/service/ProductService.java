@@ -3,9 +3,11 @@ package com.nomizo.service;
 import com.nomizo.db.ProductRepository;
 import com.nomizo.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProductService {
 
     @Autowired
