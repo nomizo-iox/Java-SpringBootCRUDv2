@@ -1,6 +1,7 @@
 package com.nomizo.controller;
 
 
+import com.nomizo.logs.Logging;
 import com.nomizo.model.Product;
 import com.nomizo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ public class ProductController {
 
     @Autowired
     ProductService productService;
+    @Autowired
+    Logging logging;
 
     /* POST METHOD */
     @PostMapping("/addProduct")
